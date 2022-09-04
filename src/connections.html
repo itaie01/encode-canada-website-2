@@ -36,11 +36,11 @@
                     </li>
                     <li>
                         <a href="content.html"
-                            class="block text-lg font-semibold md:text-md link-underline link-underline-black link-underline:hover">Content</a>
+                            class="block text-lg md:text-md link-underline link-underline-black link-underline:hover">Content</a>
                     </li>
                     <li>
                         <a href="connections.html"
-                            class="block text-lg md:text-md link-underline link-underline-black link-underline:hover">Connections</a>
+                            class="block text-lg font-semibold md:text-md link-underline link-underline-black link-underline:hover">Connections</a>
                     </li>
                     <li>
                         <a href="community.html"
@@ -50,54 +50,101 @@
             </div>
         </div>
     </nav>
-    <div class="container bg-timberwolf font-medium h-[40vh]">
-        <div>
-            We foster connections between students, industry professionals, academic researchers, and policymakers.
-            Through hosting and attending workshops, symposiums, and other events, we hope to encourage an
-            interdisciplinary understanding of AI and elevate the voice of youth in technological innovation and
-            application.
-        </div>
-        </br>
-        <div>
-            We are currently busy planning events and workshops. If you want to collaborate with us or are hosting/know
-            of an event we would be interested in attending, please let us know!
-        </div>
-    </div>
-    <div class="container bg-connections-end font-medium h-[40vh]">
-        <div class="flex justify-center content-center">
-            <div class="flex flex-col">
-                <button>
-                    <div id="workshops-title">
-                        Our Past Workshops
-                    </div>
-                </button>
-                <button>
-                    <div id="events-title">
-                        Our Past Events
-                    </div>
-                </button>
-            </div>
-            <div class="flex justify-center content-center">
-                <div id="workshops-content">
-                    <ul>
-                        <li>AI & Society: How AI Affects You (@ McGill University)</li>
-                        <li>Feminist AI (@ University of Toronto)</li>
-                        <li>Intro to AI Ethics (@ Toronto Metropolitan University)</li>
-                    </ul>
-                </div>
-                <div id="events-title">
-                    <ul>
-                        <li>Digital Law Forum 2022 (@ University of Alberta)</li>
-                        <li>Digital Innovation and Law Society, Tea Time Talks 2022 (@ University of Alberta)</li>
-                        <li>Girl Up Canada: Women in Leadership 2021</li>
-                    </ul>
-                </div>
+    <div class="bg-timberwolf h-[40vh] pt-10">
+        <div class="container mx-auto max-w-5xl">
+            <div class="font-medium text-3xl">
+                <p>
+                    We foster connections between students, industry professionals, academic researchers, and
+                    policymakers.
+                    Through hosting and attending workshops, symposiums, and other events, we hope to encourage an
+                    interdisciplinary understanding of AI and elevate the voice of youth in technological innovation and
+                    application.
+                </p>
+                </br>
+                <p>
+                    We are currently busy planning events and workshops. If you want to collaborate with us or are
+                    hosting/know of an event we would be interested in attending, please let us know!
+                </p>
             </div>
         </div>
     </div>
+    <div class="bg-connections-end h-[50vh]">
+        <div class="container mx-auto font-medium text-white">
+            <div class="flex justify-center content-center gap-40 py-40">
+                <div class="flex flex-col justify-center content-center gap-10 align-middle ">
+                    <button id="workshops-title" onclick="displayContent('workshops-content')">
+                        <div class="text-3xl">
+                            Our Past Workshops
+                        </div>
+                    </button>
+                    <button id="events-title" onclick="displayContent('events-content')">
+                        <div class="text-3xl">
+                            Our Past Events
+                        </div>
+                    </button>
+                </div>
+                <div class="flex justify-center content-center">
+                    <div class="content text-3xl" id="workshops-content">
+                        <ul>
+                            <li class="content-item">AI & Society: How AI Affects You (@ McGill University)</li>
+                            <li class="content-item">Feminist AI (@ University of Toronto)</li>
+                            <li class="content-item">Intro to AI Ethics (@ Toronto Metropolitan University)</li>
+                        </ul>
+                    </div>
+                    <div class="hidden content text-3xl" id="events-content">
+                        <ul>
+                            <li class="content-item">Digital Law Forum 2022 (@ University of Alberta)</li>
+                            <li class="content-item">Digital Innovation and Law Society, Tea Time Talks 2022 </br> (@
+                                University of Alberta)</li>
+                            <li class="content-item">Girl Up Canada: Women in Leadership 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        li.content-item:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .link-underline {
+            border-bottom-width: 0;
+            background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+            background-size: 0 3px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size .5s ease;
+        }
+
+        .link-underline-black {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(black, black)
+        }
+
+        .link-underline-white {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(white, white)
+        }
+
+        .link-underline:hover {
+            background-size: 100% 3px;
+            background-position: 0 100%
+        }
+
+        .container {
+            overflow-y: auto;
+        }
+    </style>
 
     <script>
+        function displayContent(content) {
+            let contents = document.getElementsByClassName("content")
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            document.getElementById(content).style.display = 'block';
 
+        }
     </script>
 </body>
 

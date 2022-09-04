@@ -50,87 +50,89 @@
             </div>
         </div>
     </nav>
-    <section class="container mx-auto">
-        <div class="text-left">
-            <p class="text-6xl">
-                What are we creating?
-            </p>
-            <p class="text-4xl">
-                We create educational content about AI: the basics, the ethics, and the academic.
-                </br>
-                This content ranges from Instagram infographics about tech to
-                full-length survey reports about key ethical issues with AI applications. All our content is accessible
-                to people with or without technical or policy backgrounds.
-            </p>
-        </div>
-    </section>
-    <section class="container mx-auto">
-        <div class="text-center">
-            <p class="text-5xl font-semibold">
-                Check out our instagram
-            </p>
+    <div class="bg-ejc-red h-[40vh]">
+        <div class="container mx-auto py-16">
             <div class="flex justify-center items-center">
-                <div style="max-width: 75%;">
-                    <!-- SnapWidget -->
-                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
-                    <iframe src="https://snapwidget.com/embed/1008271" class="snapwidget-widget"
-                        allowtransparency="true" frameborder="0" scrolling="no"
-                        style="border:none; overflow:hidden;  width:100%; "></iframe>
+                <div class="max-w-5xl text-white text-4xl">
+                    <p>
+                        We create educational content about AI: the basics, the ethics, and the academic.
+                    </p>
+                    <br>
+                    <p>
+                        This content ranges from Instagram infographics about tech to
+                        full-length survey reports about key ethical issues with AI applications. All our content is
+                        accessible to people with or without technical or policy backgrounds.
+                    </p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="bg-content-middle">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center">
+                <div class="text-4xl font-medium py-8">
+                    Check out our Instagram
+                </div>
+            </div>
+            <!-- SnapWidget -->
+            <script src="https://snapwidget.com/js/snapwidget.js"></script>
+            <iframe src="https://snapwidget.com/embed/1008271" class="snapwidget-widget" allowtransparency="true"
+                frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+        </div>
+    </div>
+    <div class="bg-community-end">
+        <div class="container mx-auto">
+            <div class="flex justify-center items-center">
+                <div class="text-4xl text-white font-medium py-8">
+                    Check out our column for the Montréal AI Ethics Institute
+                </div>
+            </div>
+            <div class="pb-8">
+                <div>
+                    <iframe src="https://montrealethics.ai/category/columns/recess/" height="800px" width="100%"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-content-middle">
+        <div class="container mx-auto py-8 max-w-2xl">
+            <div>
+                <a class="twitter-timeline" href="https://twitter.com/EncodeCanada?ref_src=twsrc%5Etfw">Check us out
+                    on
+                    Twitter</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
+    <style>
+        .link-underline {
+            border-bottom-width: 0;
+            background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+            background-size: 0 3px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size .5s ease;
+        }
 
-        </div>
-    </section>
-    <section class="container mx-auto">
-        <div class="text-center">
-            <p class="text-5xl font-semibold">
-                Check out our column for the Montréal AI Ethics Institute
-            </p>
-        </div>
-        <div class="flex justify-center items-center">
-            <div class="h-[70vh]">
-                <div style="max-width: 75%">
-                    <iframe src="https://montrealethics.ai/category/columns/recess/" frameborder="0" height="100%"
-                        width="100%"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div class="flex justify-center items-center flex-grow">
-            <div style="max-width:100%;">
-                <div class="w-full h-auto">
-                    <a class="twitter-timeline" href="https://twitter.com/EncodeCanada?ref_src=twsrc%5Etfw">Tweets by
-                        EncodeCanada</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-        </div>
-    </section>
+        .link-underline-black {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(black, black)
+        }
 
+        .link-underline-white {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(white, white)
+        }
+
+        .link-underline:hover {
+            background-size: 100% 3px;
+            background-position: 0 100%
+        }
+
+        .container {
+            overflow-y: auto;
+        }
+    </style>
 </body>
-<style>
-    .link-underline {
-        border-bottom-width: 0;
-        background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-        background-size: 0 3px;
-        background-position: 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size .5s ease;
-    }
-
-    .link-underline-black {
-        background-image: linear-gradient(transparent, transparent), linear-gradient(black, black)
-    }
-
-    .link-underline-white {
-        background-image: linear-gradient(transparent, transparent), linear-gradient(white, white)
-    }
-
-    .link-underline:hover {
-        background-size: 100% 3px;
-        background-position: 0 100%
-    }
-</style>
 
 </html>

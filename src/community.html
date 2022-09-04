@@ -36,7 +36,7 @@
                     </li>
                     <li>
                         <a href="content.html"
-                            class="block text-lg font-semibold md:text-md link-underline link-underline-black link-underline:hover">Content</a>
+                            class="block text-lg md:text-md link-underline link-underline-black link-underline:hover">Content</a>
                     </li>
                     <li>
                         <a href="connections.html"
@@ -44,40 +44,93 @@
                     </li>
                     <li>
                         <a href="community.html"
-                            class="block text-lg md:text-md link-underline link-underline-black link-underline:hover">Community</a>
+                            class="block text-lg font-semibold md:text-md link-underline link-underline-black link-underline:hover">Community</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container bg-timberwolf h-[20vh]">
-        <div class="font-medium text-left">
-            We plan to create a network of organizations across Canada that can share resources to create and push
-            for our common goal: AI that works for people. We call these organizations “nodes”, alluding to their unique
-            characteristics and functions but their essential role in the larger Canadian AI ecosystem.
-        </div>
-    </div>
-    <div class="container bg-community-middle h-[40vh]">
-        <div class="flex flex-auto flex-wrap justify-center content-center">
-            <div>
-                <a href="https://montrealethics.ai/"><img src="../images/maiei.png"
-                        alt="Montreal AI Ethics Institute logo"></a>
-            </div>
-            <div>
-                <a href="https://dlis.ca/"><img src="../images/dlis.png"
-                        alt="Digital Law and Innovation Society logo"></a>
-            </div>
-            <div>
-                <a href="https://www.ethicallyalignedai.com/"><img src="../images/eth-align-ai.png"
-                        alt="Ethically Aligned AI Logo"></a>
+    <div class="bg-timberwolf h-[30vh]">
+        <div class="container mx-auto max-w-5xl pt-12">
+            <div class="flex justify-center content-center">
+                <div class="font-medium text-left text-3xl">
+                    We plan to create a network of organizations across Canada that can share resources to create and
+                    push
+                    for our common goal: AI that works for people. We call these organizations “nodes”, alluding to
+                    their
+                    unique characteristics and functions but their essential role in the larger Canadian AI ecosystem.
+                </div>
             </div>
         </div>
     </div>
-    <div class="container bg-community-end h-[30vh]">
-        <div class="flex justify-center content-center font-medium">
-            Want to be a node? Let us know!
+    <div class="bg-community-middle h-[40vh]">
+        <div class="container mx-auto py-10">
+            <div class="flex flex-col gap-y-14 gap-x-10">
+                <div class="text-4xl text-white font-semibold text-center">
+                    Our Nodes
+                </div>
+                <div class="flex flex-auto flex-wrap gap-16 justify-center content-center">
+                    <div class="flex justify-center content-center">
+                        <div class="h-60 w-60">
+                            <a href="https://montrealethics.ai/"><img src="../images/maiei.png"
+                                    alt="Montreal AI Ethics Institute logo"></a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center content-center">
+                        <div class="h-60 w-60">
+                            <a href="https://dlis.ca/"><img src="../images/dlis.png"
+                                    alt="Digital Law and Innovation Society logo"></a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center content-center">
+                        <div class="h-60 w-60">
+                            <a href="https://www.ethicallyalignedai.com/"><img src="../images/eth-align-ai.png"
+                                    alt="Ethically Aligned AI Logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-community-end h-[30vh]">
+            <div class="container mx-auto py-[7.5rem]">
+                <div class="flex justify-center content-center">
+                    <div class="text-3xl font-medium text-white ">
+                        Want to be a node? Let us know!
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <style>
+        .link-underline {
+            border-bottom-width: 0;
+            background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+            background-size: 0 3px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size .5s ease;
+        }
+
+        .link-underline-black {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(black, black)
+        }
+
+        .link-underline-white {
+            background-image: linear-gradient(transparent, transparent), linear-gradient(white, white)
+        }
+
+        .link-underline:hover {
+            background-size: 100% 3px;
+            background-position: 0 100%
+        }
+
+        .container {
+            overflow-y: auto;
+        }
+    </style>
 </body>
 
 </html>
