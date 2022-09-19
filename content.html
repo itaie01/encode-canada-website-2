@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="/dist/output.css">
     <link rel="icon" type="image/jpg" href="/images/logo.jpg">
     <title>Content</title>
 </head>
@@ -51,7 +51,7 @@
             </div>
         </div>
     </nav>
-    <div class="bg-ejc-red h-[40vh]">
+    <div class="bg-ejc-red h-[45vh]">
         <div class="container mx-auto py-16">
             <div class="flex justify-center items-center">
                 <div class="max-w-5xl text-white text-4xl">
@@ -63,6 +63,12 @@
                         This content ranges from Instagram infographics about tech to
                         full-length survey reports about key ethical issues with AI applications. All our content is
                         accessible to people with or without technical or policy backgrounds.
+                    </p>
+                    <br>
+                    <p>
+                        If you would like to collaborate with us, please <a href="mailto:content@encodejustice.ca"
+                            id="content-email">reach
+                            out</a>.
                     </p>
                 </div>
             </div>
@@ -132,6 +138,18 @@
 
         .container {
             overflow-y: auto;
+        }
+
+        #content-email {
+            text-decoration: underline;
+        }
+
+        #content-email::after {
+            display: inline;
+            content: url('/images/share_light.png');
+            zoom: 25%;
+            padding-left: 0.5rem;
+
         }
     </style>
 </body>

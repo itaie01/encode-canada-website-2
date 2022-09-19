@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="/dist/output.css">
     <link rel="icon" type="image/jpg" href="/images/logo.jpg">
     <title>Connections</title>
 </head>
@@ -51,7 +51,7 @@
             </div>
         </div>
     </nav>
-    <div class="bg-timberwolf h-[40vh] pt-10">
+    <div class="bg-timberwolf h-[40vh] py-10">
         <div class="container mx-auto max-w-5xl">
             <div class="font-medium text-3xl">
                 <p>
@@ -64,8 +64,11 @@
                 </br>
                 <p>
                     We are currently busy planning events and workshops. If you want to collaborate with us or are
-                    hosting/know of an event we would be interested in attending, please let us know!
+                    hosting/know of an event we would be interested in attending, please <a
+                        href="mailto:director@encodejustice.ca" id="director-email">let us know</a>!
                 </p>
+                <br>
+                <br>
             </div>
         </div>
     </div>
@@ -134,6 +137,18 @@
 
         .container {
             overflow-y: auto;
+        }
+
+        #director-email {
+            text-decoration: underline;
+        }
+
+        #director-email::after {
+            display: inline;
+            content: url('/images/share_dark.png');
+            zoom: 25%;
+            padding-left: 0.5rem;
+
         }
     </style>
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="/dist/output.css">
     <link rel="icon" type="image/jpg" href="/images/logo.jpg">
     <title>Community</title>
 </head>
@@ -96,7 +96,8 @@
             <div class="container mx-auto py-[7.5rem]">
                 <div class="flex justify-center content-center">
                     <div class="text-3xl font-medium text-white ">
-                        Want to be a node? Let us know!
+                        Want to be a node? <a href="mailto:director@encodejustice.ca" id="director-email">Let us
+                            know</a>!
                     </div>
                 </div>
             </div>
@@ -129,6 +130,18 @@
 
         .container {
             overflow-y: auto;
+        }
+
+        #director-email {
+            text-decoration: underline;
+        }
+
+        #director-email::after {
+            display: inline;
+            content: url('/images/share_light.png');
+            zoom: 25%;
+            padding-left: 0.5rem;
+
         }
     </style>
 </body>
